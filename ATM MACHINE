@@ -1,0 +1,29 @@
+print("wellcome to HTFC BANK:")
+pin=int(input("enter the pin number:"))
+amount=1900000
+if(pin==1111):
+    print("1-withdraw")
+    print("2-balance enquire")
+    print("3-fast cash")
+    choice=int(input("choose the transacation:"))
+    if(choice==1):
+        withdraw=int(input("enter your withdrawel amount"))
+        if(withdraw<amount):
+           print("please collect your cash:",withdraw)
+        else:
+            print("invalid cash")
+    elif(choice==2):
+        print("your available balance",amount)
+    elif(choice==3):
+        print("1-1000")
+        print("2-2000")
+        print("3-5000")
+        option=int(input("enter the option:"))
+        if(option==1):
+           print("please take cash 1000")
+        if(option==2):
+           print("please take cash 2000")
+        if(option==3):
+           print("please take cash 5000")
+else:
+    print("invalid amount")
