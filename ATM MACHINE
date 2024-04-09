@@ -26,4 +26,4 @@ if(pin==1111):
         if(option==3):
            print("please take cash 5000")
 else:
-    print("invalid amount")
+    print("invalid pin number")
